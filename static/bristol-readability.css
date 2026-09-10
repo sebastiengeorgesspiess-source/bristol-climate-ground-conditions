@@ -1,0 +1,12 @@
+:root{--muted:#d0c2b2;--line:#8b5f32;--o:#ffb454;--b:#74def2;--g:#8be5a6;--r:#ff8173;--v:#c9adff}
+html,body{font-size:16px;line-height:1.55}
+.top a,.ey,.tag,label,.metric span,.tiny,.fact span,.eventTable th{font-size:12px!important;line-height:1.45}
+.lead{font-size:18px;color:#e4d8ca}.tag{padding:8px 10px}.metric{padding:13px}.metric b{font-size:20px}
+select,button,.back,.source a{min-height:44px}select,button{font-size:14px}.fact{min-height:76px}.fact b{font-size:18px}
+.notice{padding:13px;color:#eadfd3}.eventTable th,.eventTable td{padding:9px;font-size:13px}.mechanism p,.source,.stamp{color:#dfd1c2}
+.compactTable,.compactTable :is(th,td),.sourceState{font-size:12px!important;line-height:1.45}
+.loading{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:12px;min-height:58px}
+.loading:before{content:"";width:22px;height:22px;border:3px solid #68451f;border-top-color:var(--o);border-radius:50%;animation:bristol-spin .9s linear infinite}
+@keyframes bristol-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.loading:before{animation:none}}
+@media(max-width:680px){.lead{font-size:17px}.top{display:none}.metric span{font-size:11px!important}}
